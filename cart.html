@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart | CleanTrade</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+
+    <header class="main-header">
+        <a href="index.html" class="logo">CleanTrade</a>
+        <nav>
+            <a href="marketplace.html">Marketplace</a>
+            <a href="fruits.html">Fruits</a>
+            <a href="vegetables.html">Vegetables</a>
+            <a href="seafood.html">Seafood</a>
+            <a href="nuts.html">Nuts</a>
+        </nav>
+    </header>
+
+    <main class="cart-container">
+        <div class="cart-summary">
+            <h1>Your Quote Request</h1>
+            <div id="cart-items-list">
+                </div>
+            <div class="cart-total">
+                <h3>Total Estimated Price:</h3>
+                <h3 id="total-price">$0.00</h3>
+            </div>
+        </div>
+
+        <div class="checkout-form">
+            <h2>Complete Your Request</h2>
+            <form id="checkout-form">
+                <div class="form-group">
+                    <label for="user_name">Full Name</label>
+                    <input type="text" id="user_name" name="user_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="user_email">Email Address</label>
+                    <input type="email" id="user_email" name="user_email" required>
+                </div>
+                <div class="form-group">
+                    <label for="user_phone">Contact Number</label>
+                    <input type="tel" id="user_phone" name="user_phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="user_country">Country</label>
+                    <input type="text" id="user_country" name="user_country" required>
+                </div>
+                 <div class="form-group">
+                    <label for="user_address">Purpose of Order (e.g., Restaurant Supply, Retail, etc.)</label>
+                    <textarea id="user_address" name="user_address" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Request Quote</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="cart.js"></script>
+</body>
+</html>

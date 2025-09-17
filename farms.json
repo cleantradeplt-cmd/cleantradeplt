@@ -1,0 +1,117 @@
+[
+  {
+    "farmName": "Green Valley Organics",
+    "farmStory": "Nestled in a sun-drenched valley, Green Valley Organics has been a family-run endeavor for over four generations. We believe in working with nature, not against it. Our commitment to organic, regenerative agriculture means every fruit and vegetable is grown without synthetic pesticides, resulting in produce that is bursting with natural flavor and nutrients. We are proud to be custodians of this land, delivering its wholesome bounty directly to your business.",
+    "categories": {
+      "Fruits": {
+        "products": [
+          {
+            "id": "FRT001",
+            "name": "Organic Royal Gala Apples",
+            "description": "Crisp, sweet, and juicy Royal Gala apples, hand-picked at peak ripeness. Perfect for fresh consumption and culinary applications.",
+            "origin": "Washington, USA",
+            "unit": "metric ton",
+            "pricePerUnit": 1500,
+            "imageUrl": "assets/fruits/apples.jpg"
+          },
+          {
+            "id": "FRT002",
+            "name": "Albion Strawberries",
+            "description": "Exceptionally sweet and aromatic Albion strawberries, known for their vibrant red color and consistent quality throughout the season.",
+            "origin": "California, USA",
+            "unit": "500kg pallet",
+            "pricePerUnit": 2200,
+            "imageUrl": "assets/fruits/strawberry.jpg"
+          }
+        ]
+      },
+      "Vegetables": {
+        "products": [
+          {
+            "id": "VEG001",
+            "name": "Heirloom Rainbow Carrots",
+            "description": "A colorful mix of purple, yellow, and orange heirloom carrots. Visually stunning with a sweet, earthy flavor.",
+            "origin": "Andes, Peru",
+            "unit": "metric ton",
+            "pricePerUnit": 1200,
+            "imageUrl": "assets/veggies/carrots.jpg"
+          },
+          {
+            "id": "VEG002",
+            "name": "Roma Tomatoes (Plum)",
+            "description": "Firm, flavorful Roma tomatoes with a low moisture content, ideal for sauces, pastes, and canning.",
+            "origin": "Tuscany, Italy",
+            "unit": "metric ton",
+            "pricePerUnit": 1100,
+            "imageUrl": "assets/veggies/tomatoes.jpg"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "farmName": "Azure Coast Fisheries",
+    "farmStory": "Azure Coast Fisheries isn't a single farm but a cooperative of dedicated, small-scale fishing families committed to sustainable practices. We fish in harmony with the ocean's rhythms, using line-catching methods that minimize bycatch and protect marine ecosystems. Our mission is to provide the freshest, highest-quality seafood while ensuring the health of our oceans for generations to come. From our boats to your door, it's a story of respect for the sea.",
+    "categories": {
+      "Seafood": {
+        "products": [
+          {
+            "id": "SEA001",
+            "name": "Sustainably Farmed Atlantic Salmon",
+            "description": "Rich in Omega-3s, our Atlantic Salmon is raised in low-density ocean pens with a focus on animal welfare and environmental impact.",
+            "origin": "Fjords of Norway",
+            "unit": "100kg lot",
+            "pricePerUnit": 1800,
+            "imageUrl": "assets/seafood/seafood1.jpg"
+          },
+          {
+            "id": "SEA002",
+            "name": "Wild-Caught Yellowfin Tuna",
+            "description": "Sashimi-grade Yellowfin Tuna, caught one by one using the pole and line method. Deep red, firm, and incredibly fresh.",
+            "origin": "Maldives",
+            "unit": "100kg lot",
+            "pricePerUnit": 2500,
+            "imageUrl": "assets/seafood/tuna.jpg"
+          },
+          {
+            "id": "SEA003",
+            "name": "Jumbo Black Tiger Prawns",
+            "description": "Responsibly farmed Black Tiger Prawns, known for their firm texture and distinctively sweet flavor. Delivered frozen to lock in freshness.",
+            "origin": "Mekong Delta, Vietnam",
+            "unit": "500kg pallet",
+            "pricePerUnit": 4000,
+            "imageUrl": "assets/seafood/prawns.jpg"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "farmName": "Terra Nova Plantations",
+    "farmStory": "At Terra Nova, we blend tradition with cutting-edge technology to cultivate the world's finest nuts and grains on a global scale. Our expansive plantations utilize smart irrigation, drone monitoring, and data analytics to ensure optimal crop health and resource efficiency. We maintain rigorous quality control from planting to processing, guaranteeing a consistent, premium product that meets the highest international standards for our corporate partners.",
+    "categories": {
+      "Nuts": {
+        "products": [
+          {
+            "id": "NUT001",
+            "name": "Unpasteurized California Almonds",
+            "description": "Premium, nonpareil almonds, celebrated for their uniform size and superior taste. Steam pasteurized to ensure safety and quality.",
+            "origin": "California, USA",
+            "unit": "metric ton",
+            "pricePerUnit": 6000,
+            "imageUrl": "assets/nuts/nuts1.jpg"
+          },
+          {
+            "id": "NUT002",
+            "name": "Chandler Walnuts",
+            "description": "Light-colored, mild-flavored Chandler walnuts. High in demand for their excellent kernel quality and easy cracking.",
+            "origin": "Chile",
+            "unit": "metric ton",
+            "pricePerUnit": 7500,
+            "imageUrl": "assets/nuts/walnuts.jpg"
+          }
+        ]
+      }
+    }
+  }
+]

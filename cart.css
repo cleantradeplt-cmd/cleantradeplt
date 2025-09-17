@@ -1,0 +1,245 @@
+/* --- Global Styles & Variables --- */
+:root {
+    --deep-green: #109648;
+    --light-blue: #7FC8F8;
+    --lime-accent: #CAFFB9;
+    --dark-navy: #161925;
+    --text-light: #f0f0f0;
+    --card-bg: #1a1e2d;
+    --border-color: #333;
+
+    --font-heading: 'Lora', serif;
+    --font-body: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--dark-navy);
+    color: var(--text-light);
+}
+
+/* --- Header --- */
+.main-header {
+    background-color: var(--card-bg);
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.logo {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--lime-accent);
+    text-decoration: none;
+}
+
+.main-header nav a {
+    color: var(--text-light);
+    margin-left: 2rem;
+    font-weight: 400;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.main-header nav a:hover {
+    color: var(--lime-accent);
+}
+
+/* --- Cart Layout --- */
+.cart-container {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+    gap: 3rem;
+    padding: 3rem 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.cart-summary h1, .checkout-form h2 {
+    font-family: var(--font-heading);
+    color: var(--light-blue);
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+/* --- Cart Items Styling --- */
+#cart-items-list {
+    border-top: 1px solid var(--border-color);
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.cart-item-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 1.5rem;
+}
+
+.cart-item-details {
+    flex-grow: 1;
+}
+
+.cart-item-details h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.25rem;
+}
+
+.cart-item-details p {
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-bottom: 0.5rem;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    background: var(--dark-navy);
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+    width: fit-content;
+}
+
+.quantity-btn {
+    background: none;
+    border: none;
+    color: var(--text-light);
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.2rem 0.8rem;
+}
+
+.quantity-input {
+    width: 40px;
+    text-align: center;
+    background: none;
+    border: none;
+    color: var(--text-light);
+    font-size: 1rem;
+    -moz-appearance: textfield;
+}
+.quantity-input::-webkit-outer-spin-button,
+.quantity-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.cart-item-price {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0 2rem;
+    min-width: 100px;
+    text-align: right;
+}
+
+.remove-item-btn {
+    background: none;
+    border: 1px solid #c94a4a;
+    color: #c94a4a;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.remove-item-btn:hover {
+    background-color: #c94a4a;
+    color: var(--text-light);
+}
+
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--lime-accent);
+}
+
+/* --- Checkout Form --- */
+.checkout-form {
+    background-color: var(--card-bg);
+    padding: 2.5rem;
+    border-radius: 10px;
+    height: fit-content;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #ccc;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    background: var(--dark-navy);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    color: var(--text-light);
+    font-size: 1rem;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    outline: none;
+    border-color: var(--deep-green);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--deep-green);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #15b35a;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 992px) {
+    .cart-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .cart-item-img {
+        margin-bottom: 1rem;
+    }
+    .cart-item-price {
+        margin: 1rem 0;
+        text-align: left;
+    }
+}
